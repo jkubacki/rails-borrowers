@@ -1,5 +1,4 @@
 import DS from 'ember-data';
-import Friend from 'friend';
 
 export default DS.Model.extend({
   firstName: DS.attr('string'),
