@@ -25,6 +25,11 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 gem 'ember-cli-rails'
 
+group :development do
+  gem 'guard'
+  gem 'guard-livereload', '~> 2.4', require: false
+end
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
