@@ -3,6 +3,7 @@
 <li>Last Name: {{model.lastName}}</li>
 <li>Email: {{model.email}}</li>
 <li>twitter: {{model.twitter}}</li>
+<li><button>{{link-to 'Edit' 'friends.edit' model}}</button></li>
 </ul>
 
 {{#link-to 'friends.index'}}
