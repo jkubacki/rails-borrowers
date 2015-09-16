@@ -1,4 +1,10 @@
-import Ember from 'ember';
+import FriendsBaseController from './base';
 
-export default Ember.Controller.extend({
+export default FriendsBaseController.extend({
+  actions: {
+    cancel() {
+      this.transitionToRoute('friends.show', this.get('model'));
+      return false;
+    }
+  }
 });
