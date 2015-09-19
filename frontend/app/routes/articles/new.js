@@ -6,7 +6,7 @@ export default Ember.Route.extend({
       friend: this.modelFor('friends/show')
     });
   },
-  actions() {
+  actions: {
     save() {
       var model = this.modelFor('articles/new');
 
