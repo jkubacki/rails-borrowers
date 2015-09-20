@@ -1,7 +1,11 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rake db:seed (or created alongside the db with db:setup).
-#
-# Examples:
-#
-#   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
-#   Mayor.create(name: 'Emanuel', city: cities.first)
+f1 = Friend.create(first_name: 'Friend1', last_name: 'Last1', twitter: 'twitter1', email: 'friend1@example.com')
+f2 = Friend.create(first_name: 'Friend2', last_name: 'Last2', twitter: 'twitter2', email: 'friend2@example.com')
+f3 = Friend.create(first_name: 'Friend3', last_name: 'Last3', twitter: 'twitter3', email: 'friend3@example.com')
+f4 = Friend.create(first_name: 'Friend4', last_name: 'Last4', twitter: 'twitter4', email: 'friend4@example.com')
+
+Article.create(description: 'article1', state: 'borrowed', friend: f1)
+Article.create(description: 'article2', state: 'borrowed', friend: f1)
+Article.create(description: 'article3', state: 'borrowed', friend: f3)
+Article.create(description: 'article4', state: 'borrowed', friend: f3)
+Article.create(description: 'article5', state: 'borrowed', friend: f3)
+Article.create(description: 'article6', state: 'borrowed', friend: f4)
