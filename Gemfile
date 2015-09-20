@@ -27,6 +27,8 @@ gem 'ember-cli-rails'
 
 gem 'pg'
 
+gem 'active_model_serializers'
+
 group :development do
   gem 'guard'
   gem 'guard-livereload', '~> 2.4', require: false
