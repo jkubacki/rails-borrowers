@@ -29,6 +29,8 @@ gem 'pg'
 
 gem 'active_model_serializers'
 
+gem 'counter_culture', '~> 0.1.29'
+
 group :development do
   gem 'guard'
   gem 'guard-livereload', '~> 2.4', require: false
