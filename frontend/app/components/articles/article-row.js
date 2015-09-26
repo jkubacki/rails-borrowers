@@ -5,8 +5,11 @@ export default Ember.Component.extend({
   article: null, // passed-in
   articleStates: null, // passed-in
   actions: {
-    saveArticle(article) {
-      this.sendAction('save', article);
+    saveArticle() {
+      var article = this.get('article');
+      if (article.get('hasDirtyAttributes')) {
+        this.sendAction('save', article);
+      }
     }
   }
 });
