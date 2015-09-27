@@ -17,5 +17,13 @@ export default Ember.Route.extend({
     cancel() {
       this.transitionTo('articles');
     }
+  },
+  resetController: function (controller, isExiting, transition) {
+    if (isExiting) {
+      var model = controller.get('model');
+      if (model.get('isNew')) {
+        model.destroyRecord();
+      }
+    }
   }
 });
